@@ -105,6 +105,14 @@ main {
   margin-top: 16px;
 }
 
+/* Sponsor Section */
+.sponsor {
+  gap: 60px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 70px;
+}
+
 /* /////////////////////////////
 //////// Responsive Design /////
 ///////////////////////////// */
