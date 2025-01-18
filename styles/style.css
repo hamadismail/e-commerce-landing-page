@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Variable Property */
+:root {
+  --primary-color: #3a3a3a;
+  --title-color: #18191f;
+  --price-color: rgba(0, 0, 0, 0.87);
+  --description-color: #787885;
+  --bg-primary: #ffffff;
+  --bg-secondary: #0a0826;
+  --color-btn: #e02c6d;
+}
+
+/* Shared Styles */
+.display-flex {
+  display: flex;
+}
+
+/* Initial Setup */
+* {
+  font-family: 'Poppins', serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+header,
+main {
+  background-color: var(--bg-primary);
+}
+/* header,
+main {
+  padding: 90px 120px;
+} */
+
+/* //////////////////////////
+//////// Header Styles /////
+//////////////////////////*/
+
+/* Nav Section */
+.nav {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.brand h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--price-color);
+}
+.nav-item {
+  list-style: none;
+  margin-right: 34px;
+  cursor: pointer;
+}
+.nav-list {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Banner Section */
+.banner {
+  justify-content: space-between;
+  align-items: center;
+  gap: 130px;
+  margin-top: 50px;
+}
+.banner-title {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 4.3rem;
+  color: var(--primary-color);
+}
+.banner-description {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.banner-img {
+  position: relative;
+}
+.img-circle {
+  width: 100%;
+}
+.img-camera {
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  top: 0%;
+}
+.banner-content button {
+  background-color: var(--color-btn);
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 41px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+/* /////////////////////////////
+//////// Responsive Design /////
+///////////////////////////// */
+
+/* Small Device */
+@media screen and (max-width: 576px) {
+  .nav,
+  .nav-items,
+  .banner {
+    flex-direction: column;
+    margin-left: 20px;
+  }
+}
